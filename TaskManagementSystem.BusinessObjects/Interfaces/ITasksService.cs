@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 using TaskManagementSystem.BusinessObjects.DTO;
-using TaskManagementSystem.Infrastructure.Entities;
 
 namespace TaskManagementSystem.BusinessObjects.Interfaces
 {
