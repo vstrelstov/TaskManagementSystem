@@ -1,7 +1,7 @@
 ﻿namespace TaskManagementSystem.BusinessObjects.DTO
 {
     /// <summary>
-    /// Таким образом обходились проблемы с передачей простых типов типа number
+    /// Обёртка для передачи примитивных типов в контроллер через axios
     /// </summary>
     /// <typeparam name="T"></typeparam>
     public class PrimitiveTypesAjaxWrapper<T>
