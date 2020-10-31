@@ -1,6 +1,6 @@
 {
-  "short_name": "TaskManagementSystem.Web",
-  "name": "TaskManagementSystem.Web",
+  "short_name": "TaskManagementSystem.Web.ClientApp",
+  "name": "TaskManagementSystem.Web.ClientApp",
   "icons": [
     {
       "src": "favicon.ico",
