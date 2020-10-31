@@ -66,7 +66,7 @@ export default class TaskInfo extends React.Component {
             SubTasks: this.state.SubTasks
         };
 
-        axios.post('/api/UpdateTask', task)
+        axios.post(`${process.env.REACT_APP_BACKEND_URL}/api/UpdateTask`, task)
             .catch((error) => alert(error));
 
     }
@@ -78,7 +78,7 @@ export default class TaskInfo extends React.Component {
             value: this.state.Id,
         }
 
-        axios.post('/api/DeleteTask', id)
+        axios.post(`${process.env.REACT_APP_BACKEND_URL}/api/DeleteTask`, id)
             .then(() => {
                 alert('Задача удалена');
                 window.location.reload();

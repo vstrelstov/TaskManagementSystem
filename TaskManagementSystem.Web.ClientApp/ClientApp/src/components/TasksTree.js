@@ -13,7 +13,7 @@ export default class TasksTree extends React.Component {
 
     componentWillMount() {
         this.renderedTasks = {};
-        axios.get('/api/gettaskshierarchy')
+        axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/gettaskshierarchy`)
             .then((responce) => {
                 console.log(responce);
                 var array = responce.data;
@@ -25,7 +25,7 @@ export default class TasksTree extends React.Component {
     }
 
     onSelect = (selectedKeys, info) => {
-        const url = '/api/gettaskbyid/?id=' + selectedKeys;
+        const url = `${process.env.REACT_APP_BACKEND_URL}/api/gettaskbyid/?id=` + selectedKeys;
         axios.get(url)
             .then((result) => {
                 this.props.setCurrentTask(result.data);

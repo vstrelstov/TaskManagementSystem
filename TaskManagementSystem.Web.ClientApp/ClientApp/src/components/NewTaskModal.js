@@ -53,7 +53,7 @@ export default class NewTaskModal extends React.Component {
             ParentTask: this.state.isRootTask || this.state.parentTask.Id === undefined ? null : this.state.parentTask
         };
 
-        axios.post('/api/AddTask', newTask)
+        axios.post(`${process.env.REACT_APP_BACKEND_URL}/api/AddTask`, newTask)
             .then(() => {
                     alert('Новая задача успешно добавлена!');
                     this.handleClose();
