@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.168
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskManagementSystem.Infrastructure", "TaskManagementSystem.Infrastructure\TaskManagementSystem.Infrastructure.csproj", "{9037AB36-7915-4149-8EBB-21D493C26B10}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskManagementSystem.BusinessObjects", "TaskManagementSystem.BusinessObjects\TaskManagementSystem.BusinessObjects.csproj", "{2FF350E1-1C58-4C73-A5D6-245F955C5EC3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManagementSystem.Web", "TaskManagementSystem.Web\TaskManagementSystem.Web.csproj", "{0653C8CB-0F03-4162-B041-B53459583743}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskManagementSystem.WebApi", "TaskManagementSystem.Web\TaskManagementSystem.WebApi.csproj", "{0653C8CB-0F03-4162-B041-B53459583743}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
