@@ -8,22 +8,16 @@ namespace TaskManagementSystem.Infrastructure.Repositories
     public class UnitOfWork : IUnitOfWork
     {
         private TasksContext _context;
-        private TasksRepository _tasksRepository;
+        private readonly Lazy<TasksRepository> _tasksRepository;
 
         public UnitOfWork()
         {
             _context = TasksContextFactory.CreateContext();
+            _tasksRepository = new Lazy<TasksRepository>(() => new TasksRepository(_context));
         }
 
-        public IRepository<ManagedTask> TaskRepository
-        {
-            get
-            {
-                if (_tasksRepository == null)
-                    _tasksRepository = new TasksRepository(_context);
-                return _tasksRepository;
-            }
-        }
+        public IRepository<ManagedTask> TaskRepository => _tasksRepository.Value;
+
         public void Save()
         {
             _context.SaveChanges();

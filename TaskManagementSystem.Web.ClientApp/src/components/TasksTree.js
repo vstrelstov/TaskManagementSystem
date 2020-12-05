@@ -12,6 +12,7 @@ export default class TasksTree extends React.Component {
     }
 
     componentWillMount() {
+		console.log(process.env.REACT_APP_BACKEND_URL);
         this.renderedTasks = {};
         axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/gettaskshierarchy`)
             .then((responce) => {
