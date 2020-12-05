@@ -7,9 +7,43 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskManagementSystem.Infras
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskManagementSystem.BusinessObjects", "TaskManagementSystem.BusinessObjects\TaskManagementSystem.BusinessObjects.csproj", "{2FF350E1-1C58-4C73-A5D6-245F955C5EC3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManagementSystem.Web.ClientApp", "TaskManagementSystem.Web.ClientApp\TaskManagementSystem.Web.ClientApp.csproj", "{0775A3DA-726A-4A47-BF06-9D2BBD7DC749}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskManagementSystem.Web.Api", "TaskManagementSystem.Web.Api\TaskManagementSystem.Web.Api.csproj", "{F9770CF9-F92E-43A1-80AB-DB60BD4AA9B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManagementSystem.Web.Api", "TaskManagementSystem.Web.Api\TaskManagementSystem.Web.Api.csproj", "{F9770CF9-F92E-43A1-80AB-DB60BD4AA9B9}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TaskManagementSystem.Web.ClientApp", "TaskManagementSystem.Web.ClientApp", "{B38711FA-9F51-42CC-BA51-7466D950A022}"
+	ProjectSection(SolutionItems) = preProject
+		TaskManagementSystem.Web.ClientApp\ClientApp\.env = TaskManagementSystem.Web.ClientApp\ClientApp\.env
+		TaskManagementSystem.Web.ClientApp\ClientApp\.gitignore = TaskManagementSystem.Web.ClientApp\ClientApp\.gitignore
+		TaskManagementSystem.Web.ClientApp\ClientApp\package-lock.json = TaskManagementSystem.Web.ClientApp\ClientApp\package-lock.json
+		TaskManagementSystem.Web.ClientApp\ClientApp\package.json = TaskManagementSystem.Web.ClientApp\ClientApp\package.json
+		TaskManagementSystem.Web.ClientApp\ClientApp\README.md = TaskManagementSystem.Web.ClientApp\ClientApp\README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "public", "public", "{A5EB5F51-0C0E-482D-9150-AD64C237189D}"
+	ProjectSection(SolutionItems) = preProject
+		TaskManagementSystem.Web.ClientApp\ClientApp\public\favicon.ico = TaskManagementSystem.Web.ClientApp\ClientApp\public\favicon.ico
+		TaskManagementSystem.Web.ClientApp\ClientApp\public\index.html = TaskManagementSystem.Web.ClientApp\ClientApp\public\index.html
+		TaskManagementSystem.Web.ClientApp\ClientApp\public\manifest.json = TaskManagementSystem.Web.ClientApp\ClientApp\public\manifest.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{50D0BD80-FF9A-4184-9DAD-C3673B63EF66}"
+	ProjectSection(SolutionItems) = preProject
+		TaskManagementSystem.Web.ClientApp\ClientApp\src\App.js = TaskManagementSystem.Web.ClientApp\ClientApp\src\App.js
+		TaskManagementSystem.Web.ClientApp\ClientApp\src\App.test.js = TaskManagementSystem.Web.ClientApp\ClientApp\src\App.test.js
+		TaskManagementSystem.Web.ClientApp\ClientApp\src\index.js = TaskManagementSystem.Web.ClientApp\ClientApp\src\index.js
+		TaskManagementSystem.Web.ClientApp\ClientApp\src\registerServiceWorker.js = TaskManagementSystem.Web.ClientApp\ClientApp\src\registerServiceWorker.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "components", "components", "{367766B7-9145-45E8-89FF-ED6F91F20C13}"
+	ProjectSection(SolutionItems) = preProject
+		TaskManagementSystem.Web.ClientApp\ClientApp\src\components\Home.js = TaskManagementSystem.Web.ClientApp\ClientApp\src\components\Home.js
+		TaskManagementSystem.Web.ClientApp\ClientApp\src\components\Layout.js = TaskManagementSystem.Web.ClientApp\ClientApp\src\components\Layout.js
+		TaskManagementSystem.Web.ClientApp\ClientApp\src\components\NavMenu.css = TaskManagementSystem.Web.ClientApp\ClientApp\src\components\NavMenu.css
+		TaskManagementSystem.Web.ClientApp\ClientApp\src\components\NavMenu.js = TaskManagementSystem.Web.ClientApp\ClientApp\src\components\NavMenu.js
+		TaskManagementSystem.Web.ClientApp\ClientApp\src\components\NewTaskModal.js = TaskManagementSystem.Web.ClientApp\ClientApp\src\components\NewTaskModal.js
+		TaskManagementSystem.Web.ClientApp\ClientApp\src\components\TaskInfo.css = TaskManagementSystem.Web.ClientApp\ClientApp\src\components\TaskInfo.css
+		TaskManagementSystem.Web.ClientApp\ClientApp\src\components\TaskInfo.js = TaskManagementSystem.Web.ClientApp\ClientApp\src\components\TaskInfo.js
+		TaskManagementSystem.Web.ClientApp\ClientApp\src\components\TasksTree.js = TaskManagementSystem.Web.ClientApp\ClientApp\src\components\TasksTree.js
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,10 +59,6 @@ Global
 		{2FF350E1-1C58-4C73-A5D6-245F955C5EC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2FF350E1-1C58-4C73-A5D6-245F955C5EC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2FF350E1-1C58-4C73-A5D6-245F955C5EC3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0775A3DA-726A-4A47-BF06-9D2BBD7DC749}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0775A3DA-726A-4A47-BF06-9D2BBD7DC749}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0775A3DA-726A-4A47-BF06-9D2BBD7DC749}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0775A3DA-726A-4A47-BF06-9D2BBD7DC749}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F9770CF9-F92E-43A1-80AB-DB60BD4AA9B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F9770CF9-F92E-43A1-80AB-DB60BD4AA9B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9770CF9-F92E-43A1-80AB-DB60BD4AA9B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -36,6 +66,11 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A5EB5F51-0C0E-482D-9150-AD64C237189D} = {B38711FA-9F51-42CC-BA51-7466D950A022}
+		{50D0BD80-FF9A-4184-9DAD-C3673B63EF66} = {B38711FA-9F51-42CC-BA51-7466D950A022}
+		{367766B7-9145-45E8-89FF-ED6F91F20C13} = {50D0BD80-FF9A-4184-9DAD-C3673B63EF66}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B375FA8D-A291-4263-A359-7DC093CD79C1}

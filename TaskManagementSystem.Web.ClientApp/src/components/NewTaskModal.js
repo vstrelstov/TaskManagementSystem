@@ -52,6 +52,8 @@ export default class NewTaskModal extends React.Component {
             ActualCompletionHours: this.state.ActualCompletionHours,
             ParentTask: this.state.isRootTask || this.state.parentTask.Id === undefined ? null : this.state.parentTask
         };
+		
+		console.log(process.env.REACT_APP_BACKEND_URL);
 
         axios.post(`${process.env.REACT_APP_BACKEND_URL}/api/AddTask`, newTask)
             .then(() => {

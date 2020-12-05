@@ -47,9 +47,12 @@ namespace TaskManagementSystem.Infrastructure.Repositories
             ManagedTask taskToDelete = _context.Tasks.Find(id);
             if (taskToDelete != null)
             {
-                var parent = _context.Tasks.FirstOrDefault(x => x.SubTasks.Contains(taskToDelete));
-                foreach (var subTask in _context.Tasks.Where(x => x.ParentTask.Id == id))
-                    subTask.ParentTask = parent;
+                var parent = _context.Tasks.AsEnumerable().FirstOrDefault(x => x.SubTasks.Contains(taskToDelete)); // TODO: Понять причину падения
+                if (parent != null)
+                {
+                    foreach (var subTask in _context.Tasks.Where(x => x.ParentTask.Id == id))
+                        subTask.ParentTask = parent;
+                }
                 _context.Tasks.Remove(taskToDelete);
             }
         }
