@@ -29,6 +29,6 @@ namespace TaskManagementSystem.Infrastructure.Entities
 
         public ManagedTask ParentTask { get; set; }
 
-        public ICollection<ManagedTask> SubTasks { get; set; }
+        public ICollection<ManagedTask> SubTasks { get; set; } = new List<ManagedTask>();
     }
 }
